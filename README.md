@@ -1,14 +1,27 @@
-![New Project](https://github.com/ReaperAnon/CALIBER-Damage-Overhaul/assets/63963239/11598e7d-0f1b-4c08-b47a-024cb4ab7601)
-
-### [Synthesis Install](https://github.com/Mutagen-Modding/Synthesis/wiki/Installation)
-### [How to Use](https://github.com/Mutagen-Modding/Synthesis/wiki/Typical-Usage#adding-patchers)
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Active-green?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Game-Fallout%204-blue?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Platform-Synthesis-orange?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Maintaned by-Empyrean-purple?style=flat-square"/>
+</p>
 
 The mod can be found either by searching for CALIBER on the patcher list or added via the .synth file found [here](https://github.com/ReaperAnon/CALIBER-Damage-Overhaul/releases/tag/meta).
 
-### Consider donating if you enjoy my work:
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A0A6P3CRK)
+### Consider supporting me:
+<a href="ko-fi.com/empyrean48381" target="_blank">
+ <p>
+   <img src="https://github.com/Akaixz/CALIBER-Damage-Overhaul-Updated/blob/main/.github/assets/support_me_on_kofi_beige.png" width="180" height="XX"/>
+ </p>
+</a>
 
-## Details
+### Consider supporting the original author:
+<a href="ko-fi.com/reaperAnon" target="_blank">
+ <p>
+   <img src="https://github.com/Akaixz/CALIBER-Damage-Overhaul-Updated/blob/main/.github/assets/support_me_on_kofi_beige.png" width="180" height="XX"/>
+ </p>
+</a>
+
+## Overview
 A dynamically generated mod to change how ballistic weapon damage works in Fallout 4.
 
 The bulk of the damage is dependent on the ammunition itself instead of being a statistic that is part of the weapon, making weapons that shoot the same ammunition perform similarly to each other with some minor variations in-between.
