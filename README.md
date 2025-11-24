@@ -1,3 +1,4 @@
+# Caliber Damage Overhaul
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Active-green?style=flat-square"/>
   <img src="https://img.shields.io/badge/Game-Fallout%204-blue?style=flat-square"/>
@@ -8,14 +9,14 @@
 The mod can be found either by searching for CALIBER on the patcher list or added via the .synth file found [here](https://github.com/ReaperAnon/CALIBER-Damage-Overhaul/releases/tag/meta).
 
 ### Consider supporting me:
-<a href="ko-fi.com/empyrean48381" target="_blank">
+<a href="https://ko-fi.com/empyrean48381" target="_blank">
  <p>
    <img src="https://github.com/Akaixz/CALIBER-Damage-Overhaul-Updated/blob/main/.github/assets/support_me_on_kofi_beige.png" width="180" height="XX"/>
  </p>
 </a>
 
 ### Consider supporting the original author:
-<a href="ko-fi.com/reaperAnon" target="_blank">
+<a href="https://ko-fi.com/reaperAnon" target="_blank">
  <p>
    <img src="https://github.com/Akaixz/CALIBER-Damage-Overhaul-Updated/blob/main/.github/assets/support_me_on_kofi_beige.png" width="180" height="XX"/>
  </p>
@@ -61,9 +62,7 @@ The mods I know that do things like this are the Battlefield 4 .44 Magnum (has a
 ## Requirements
 The mod **requires the [Spell Perk Item Distributor (SPID) mod for Fallout 4](https://www.nexusmods.com/fallout4/mods/48365)** to make the weapon range, armor piercing, etc changes apply to NPCs as well (they're applied via a hidden perk). If you don't care about that you don't actually need to install it, it will still work for the player and the main damage and ammo changes work for everyone regardless.
 
-## Suggested Mods
-
-## Ammunitions Frameworks
+## Suggested Mods - Ammunitions Frameworks
 - **[Munitions - Ammo Expansion Project](https://www.nexusmods.com/fallout4/mods/66051):** For me, it's the best framework and the modern standard for expanding caliber variety in Fallout 4. The patcher includes support for it's addons **[Munitions - Additional Ammo](https://www.nexusmods.com/fallout4/mods/69583)** and **[Munitions - Advanced Calibers](https://www.nexusmods.com/fallout4/mods/81931)**.
 
 - **[Caliber Complex](https://www.nexusmods.com/fallout4/mods/50111?):** It's a good alternative, have lots of ammunitions to use from, but in my opinion it was superseded by **Munitions**. If you are going to use it, it's suggested to use along with its **[Cover Penetration Framework](https://www.nexusmods.com/fallout4/mods/55959)** patch.
