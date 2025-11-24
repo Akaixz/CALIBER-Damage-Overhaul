@@ -440,13 +440,19 @@ namespace CALIBERDamageOverhaul
             foreach (var ammoEntry in Settings.AmmoEntries)
             {
                 if (!ammoEntry.AmmoLink.TryResolve(state.LinkCache, out var ammoGetter))
+                {
+                    Console.WriteLine($"Failed to resolve ammo: {ammoEntry.AmmoLink}");
                     continue;
+                }
 
                 if (!ammoEntry.TargetToKill.IsNull && ammoEntry.ShotsToKill > 0)
                     RacesToProcess.Add(ammoEntry.TargetToKill);
 
                 var ammoSetter = state.PatchMod.Ammunitions.GetOrAddAsOverride(ammoGetter);
                 ammoSetter.Damage = ammoEntry.AmmoDamage;
+
+                //logging to see the ammo changes being made
+                Console.WriteLine($"{ammoGetter.EditorID} -> {ammoSetter.Damage}");
             }
 
             if (RacesToProcess.Any())
@@ -506,7 +512,7 @@ namespace CALIBERDamageOverhaul
 
                 if (isBallistic)
                 {
-                    // Try resolve ammo just for information — do not skip weapon if ammo missing or low.
+                    // Try resolve ammo just for information — do not skip weapon if ammo missing or low. - Empyrean 24/11/2025
                     weaponGetter.Ammo.TryResolve(state.LinkCache, out var ammoGetter);
                     if (ammoGetter is null)
                     {
@@ -514,7 +520,9 @@ namespace CALIBERDamageOverhaul
                     }
                     else if (ammoGetter.Damage <= 1)
                     {
-                        Console.WriteLine($"Ballistic weapon {weaponGetter.FormKey} ({weaponGetter.EditorID}) — ammo {ammoGetter.FormKey} has Damage={ammoGetter.Damage}");
+                        //logging to see the remaining ammunitions that havent been modified - Empyrean 24/11/2025
+                        //Console.WriteLine($"Ballistic weapon {weaponGetter.FormKey} ({weaponGetter.EditorID}) — ammo {ammoGetter.FormKey} haven't been modified: {ammoGetter.Damage}");
+                        //Console.WriteLine($"Ballistic weapon {weaponGetter.FormKey} ({weaponGetter.EditorID}) — ammo {ammoGetter.FormKey} has Damage={ammoGetter.Damage}");
                     }
 
                     // collect mod-association keywords like before
@@ -532,7 +540,7 @@ namespace CALIBERDamageOverhaul
 
                     // Always apply the weapon BaseDamage reduction for ballistic weapons(even if their ammo isn't patched) - Empyrean 23/11/2025
                     var weaponSetter = state.PatchMod.Weapons.GetOrAddAsOverride(weaponGetter);
-                    weaponSetter.BaseDamage = (ushort)Math.Ceiling(weaponSetter.BaseDamage * 0.1f);
+                    weaponSetter.BaseDamage = (ushort)Math.Ceiling(weaponSetter.BaseDamage * Settings.BallisticDamageMultiplier);
 
                     // test: define a name to weapons(going to be used in a future mod) - Empyrean 23/11/2025
                     //weaponSetter.Name = "TESTE DE NOME";
