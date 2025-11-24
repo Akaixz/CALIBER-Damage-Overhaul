@@ -441,7 +441,7 @@ namespace CALIBERDamageOverhaul
             {
                 if (!ammoEntry.AmmoLink.TryResolve(state.LinkCache, out var ammoGetter))
                 {
-                    Console.WriteLine($"Failed to resolve ammo: {ammoEntry.AmmoLink}");
+                    Console.WriteLine($"Failed to resolve ammo: {ammoEntry.AmmoLink} - if you aren't using the mod that adds this ammo, this is expected.");
                     continue;
                 }
 
