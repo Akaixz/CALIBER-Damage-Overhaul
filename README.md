@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/badge/Maintaned by-Empyrean-purple?style=flat-square"/>
 </p>
 
-The mod can be found either by searching for CALIBER on the patcher list or added via the .synth file found [here](https://github.com/ReaperAnon/CALIBER-Damage-Overhaul/releases/tag/meta).
+The mod can be found either by searching for CALIBER on the patcher list or added via the .synth file found [here](https://github.com/Akaixz/CALIBER-Damage-Overhaul-Updated/releases).
 
 ### Consider supporting me:
 <a href="https://ko-fi.com/empyrean48381" target="_blank">
