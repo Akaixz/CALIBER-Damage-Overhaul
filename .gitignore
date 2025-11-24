@@ -352,3 +352,7 @@ MigrationBackup/
 .idea/
 *.sln.iml
 
+# Project specific ignores
+docs/
+
+# MyIgnore files
