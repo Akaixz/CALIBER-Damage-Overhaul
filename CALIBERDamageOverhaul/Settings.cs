@@ -44,6 +44,9 @@ namespace CALIBERDamageOverhaul
 
     public class ModSettings
     {
+        [SettingName("Ballistic Weapon Damage Multiplier")]
+        [Tooltip("Multiplier for the base damage of ballistic weapons. Default is 0.1 (90% reduction).")]
+        public float BallisticDamageMultiplier { get; set; } = 0.1f;
         public WeaponMods BallisticPistols { get; set; } = new();
         public WeaponMods BallisticRifles { get; set; } = new();
         public WeaponMods BallisticShotguns { get; set; } = new();
